@@ -1,0 +1,22 @@
+# Justification de la Modélisation
+
+## Segments
+La séparation des segments permet d’éviter la redondance et facilite la gestion des catégories de clients.
+
+## Clients
+La table Clients contient uniquement les informations propres au client et référence le segment via une clé étrangère.
+
+## Comptes
+La table Comptes permet de relier les clients à leurs comptes sans dupliquer les informations.
+
+## Transactions
+La table Transactions centralise les opérations et utilise uniquement des clés étrangères pour éviter la duplication des données (clients, produits, agences).
+
+## Produits
+Les produits sont stockés séparément afin de faciliter leur gestion et éviter la répétition dans les transactions.
+
+## Agences
+Les agences sont isolées pour garantir la cohérence et éviter les incohérences dans les données.
+
+## Temps_transaction
+La table Temps_transaction a été introduite pour faciliter l’analyse temporelle (année, mois, trimestre) et améliorer les performances des requêtes analytiques.
