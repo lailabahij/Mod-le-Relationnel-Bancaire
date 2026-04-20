@@ -1,1 +1,0 @@
-DB_URL = "postgresql+psycopg2://postgres:ID130672@localhost:5432/financecore_db"
